@@ -22,7 +22,7 @@
       <label for="imageUrl">URL de l'image</label>
       <input type="text" placeholder="http://..." id="imageUrl" formControlName="imageUrl" class="form-control">
     </div>
-    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
+    <button type="button" class="btn btn-primary" (click)="onSubmit()" [disabled]="thingForm.invalid">Valider</button>
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
   </form>
 </div>
